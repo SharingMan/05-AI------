@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>评论 - 播客应用</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div id="status-bar"></div>
+    
+    <!-- 应用内容 -->
+    <div class="app-content">
+      <!-- 评论头部 -->
+      <div style="padding: 16px; display: flex; align-items: center; border-bottom: 1px solid var(--border-color);">
+        <i class="fas fa-arrow-left" style="margin-right: 16px;"></i>
+        <h2 style="margin: 0; font-size: 18px;">评论 (125)</h2>
+      </div>
+      
+      <!-- 剧集信息 -->
+      <div style="padding: 16px; display: flex; border-bottom: 1px solid var(--border-color);">
+        <div style="width: 60px; height: 60px; background-color: #7c4dff; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+          <i class="fas fa-headphones"></i>
+        </div>
+        <div style="margin-left: 12px; flex: 1;">
+          <div style="font-weight: 600; margin-bottom: 4px;">Vol.278 如何培养高效学习的能力</div>
+          <div style="color: var(--light-text-color); font-size: 14px;">得到精品课</div>
+        </div>
+      </div>
+      
+      <!-- 评论排序 -->
+      <div style="padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color);">
+        <div style="display: flex; align-items: center;">
+          <span style="font-weight: 600; margin-right: 8px;">最新</span>
+          <i class="fas fa-chevron-down" style="font-size: 12px;"></i>
+        </div>
+        <div style="color: var(--primary-color);">
+          <i class="fas fa-edit"></i> 写评论
+        </div>
+      </div>
+      
+      <!-- 评论列表 -->
+      <div class="comment-item">
+        <div class="comment-header">
+          <div style="width: 32px; height: 32px; background-color: #e0e0e0; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #757575;">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="comment-user">李四</div>
+          <div class="comment-time">2小时前</div>
+        </div>
+        <div class="comment-content">
+          这期节目太棒了！分享的学习方法非常实用，特别是关于如何建立知识体系的部分，让我受益匪浅。
+        </div>
+        <div class="comment-actions">
+          <div class="action-item">
+            <i class="far fa-thumbs-up"></i>
+            <span>45</span>
+          </div>
+          <div class="action-item">
+            <i class="far fa-comment"></i>
+            <span>回复</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="comment-item">
+        <div class="comment-header">
+          <div style="width: 32px; height: 32px; background-color: #e0e0e0; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #757575;">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="comment-user">王五</div>
+          <div class="comment-time">3小时前</div>
+        </div>
+        <div class="comment-content">
+          我一直在寻找高效学习的方法，这期节目给了我很多启发。希望能有更多类似的内容！
+        </div>
+        <div class="comment-actions">
+          <div class="action-item">
+            <i class="far fa-thumbs-up"></i>
+            <span>32</span>
+          </div>
+          <div class="action-item">
+            <i class="far fa-comment"></i>
+            <span>回复</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="comment-item">
+        <div class="comment-header">
+          <div style="width: 32px; height: 32px; background-color: #e0e0e0; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #757575;">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="comment-user">赵六</div>
+          <div class="comment-time">5小时前</div>
+        </div>
+        <div class="comment-content">
+          罗老师讲得太好了，我已经把这期节目听了三遍，每次都有新的收获。强烈推荐给所有想提高学习效率的朋友！
+        </div>
+        <div class="comment-actions">
+          <div class="action-item">
+            <i class="far fa-thumbs-up"></i>
+            <span>78</span>
+          </div>
+          <div class="action-item">
+            <i class="far fa-comment"></i>
+            <span>回复</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="comment-item">
+        <div class="comment-header">
+          <div style="width: 32px; height: 32px; background-color: #e0e0e0; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #757575;">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="comment-user">孙七</div>
+          <div class="comment-time">昨天</div>
+        </div>
+        <div class="comment-content">
+          我觉得这期节目的内容有点浅，希望能深入讲解一下如何应对不同类型的学习材料。
+        </div>
+        <div class="comment-actions">
+          <div class="action-item">
+            <i class="far fa-thumbs-up"></i>
+            <span>12</span>
+          </div>
+          <div class="action-item">
+            <i class="far fa-comment"></i>
+            <span>回复</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 评论输入框 -->
+      <div style="position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px; background-color: white; border-top: 1px solid var(--border-color); display: flex; align-items: center;">
+        <input type="text" placeholder="写下你的评论..." style="flex: 1; border: 1px solid var(--border-color); border-radius: 20px; padding: 8px 16px; margin-right: 12px; outline: none;">
+        <button style="background-color: var(--primary-color); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center;">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 添加状态栏
+      const statusBarContainer = document.getElementById('status-bar');
+      if (statusBarContainer) {
+        statusBarContainer.innerHTML = createStatusBar();
+      }
+    });
+  </script>
+</body>
+</html> 

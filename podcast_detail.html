@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>播客详情 - 播客应用</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div id="status-bar"></div>
+    
+    <!-- 应用内容 -->
+    <div class="app-content">
+      <!-- 播客头部 -->
+      <div style="background-color: #7c4dff; height: 200px; position: relative;">
+        <div style="position: absolute; top: 16px; left: 16px; color: white;">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <div style="position: absolute; bottom: -50px; left: 16px; display: flex; align-items: flex-end;">
+          <div style="width: 100px; height: 100px; background-color: #5e35b1; border-radius: 12px; display: flex; justify-content: center; align-items: center; color: white; font-size: 36px;">
+            <i class="fas fa-podcast"></i>
+          </div>
+          <div style="margin-left: 16px; color: white;">
+            <h2 style="margin: 0; font-size: 20px;">得到精品课</h2>
+            <p style="margin: 4px 0; font-size: 14px;">罗振宇 · 每天听本书</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 播客信息 -->
+      <div style="margin-top: 60px; padding: 16px;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+          <button class="btn-primary" style="width: 48%;">
+            <i class="fas fa-plus"></i> 订阅
+          </button>
+          <button class="btn-outline" style="width: 48%;">
+            <i class="fas fa-share-alt"></i> 分享
+          </button>
+        </div>
+        
+        <p style="color: var(--light-text-color); line-height: 1.5; margin-bottom: 24px;">
+          「得到精品课」是罗振宇创办的知识服务平台，每天更新音频节目，为你提供最有价值的知识内容。我们相信，知识就是力量，学习成就更好的自己。
+        </p>
+        
+        <!-- 剧集列表 -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <h3 style="margin: 0;">最新剧集</h3>
+          <div style="display: flex; align-items: center; color: var(--light-text-color);">
+            <span>排序</span>
+            <i class="fas fa-sort-amount-down" style="margin-left: 4px;"></i>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 60px; height: 60px; background-color: #5e35b1; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">Vol.278 如何培养高效学习的能力</div>
+            <div class="episode-meta">
+              <span>2023-03-01</span>
+              <span class="episode-duration">25分钟</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 60px; height: 60px; background-color: #5e35b1; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">Vol.277 如何提高工作效率</div>
+            <div class="episode-meta">
+              <span>2023-02-28</span>
+              <span class="episode-duration">28分钟</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 60px; height: 60px; background-color: #5e35b1; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">Vol.276 如何培养创造力</div>
+            <div class="episode-meta">
+              <span>2023-02-27</span>
+              <span class="episode-duration">32分钟</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 60px; height: 60px; background-color: #5e35b1; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">Vol.275 如何有效沟通</div>
+            <div class="episode-meta">
+              <span>2023-02-26</span>
+              <span class="episode-duration">30分钟</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div id="mini-player"></div>
+    
+    <!-- 底部导航栏 -->
+    <div id="tab-bar"></div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script>
+    initPage('home');
+  </script>
+</body>
+</html> 

@@ -1,0 +1,520 @@
+/* 自定义样式 */
+:root {
+  --primary-color: #7c4dff;
+  --secondary-color: #b388ff;
+  --background-color: #f8f9fa;
+  --text-color: #212121;
+  --light-text-color: #757575;
+  --border-color: #e0e0e0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.phone-container {
+  width: 390px;
+  height: 844px;
+  background-color: white;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border: 12px solid #121212;
+  display: inline-block;
+}
+
+.status-bar {
+  height: 44px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-bar-time {
+  font-weight: bold;
+}
+
+.status-bar-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.app-content {
+  height: calc(100% - 44px - 83px);
+  overflow-y: auto;
+  position: relative;
+}
+
+.tab-bar {
+  height: 83px;
+  background-color: white;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-text-color);
+  font-size: 10px;
+}
+
+.tab-item.active {
+  color: var(--primary-color);
+}
+
+.tab-icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.podcast-card {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.podcast-cover {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.podcast-info {
+  padding: 12px;
+}
+
+.podcast-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.podcast-author {
+  color: var(--light-text-color);
+  font-size: 14px;
+}
+
+.player-bar {
+  position: fixed;
+  bottom: 83px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+.player-cover {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
+.player-info {
+  flex: 1;
+}
+
+.player-title {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-author {
+  font-size: 12px;
+  color: var(--light-text-color);
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 20px 0 16px;
+}
+
+.category-pill {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.category-pill.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 8px 16px;
+  margin: 16px;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  margin-left: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.episode-item {
+  display: flex;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.episode-cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.episode-info {
+  flex: 1;
+}
+
+.episode-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.episode-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-text-color);
+  font-size: 12px;
+}
+
+.episode-duration {
+  color: var(--light-text-color);
+}
+
+.profile-header {
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.profile-bio {
+  color: var(--light-text-color);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.stat-label {
+  color: var(--light-text-color);
+  font-size: 12px;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.settings-label {
+  font-size: 16px;
+}
+
+.settings-value {
+  color: var(--light-text-color);
+  font-size: 16px;
+}
+
+.comment-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.comment-user {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.comment-time {
+  color: var(--light-text-color);
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.comment-content {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 16px;
+  color: var(--light-text-color);
+  font-size: 12px;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 播放页样式 */
+.player-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.player-large-cover {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  margin: 0 auto 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.player-episode-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.player-podcast-title {
+  font-size: 16px;
+  color: var(--light-text-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.progress-current {
+  position: absolute;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  width: 30%;
+}
+
+.progress-handle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30%;
+  margin-left: -6px;
+}
+
+.progress-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--light-text-color);
+  margin-bottom: 30px;
+}
+
+.player-main-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.control-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.play-button {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+}
+
+.player-secondary-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.secondary-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-text-color);
+  font-size: 12px;
+}
+
+.secondary-icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+/* 全局样式 */
+.container {
+  padding: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 16px 0;
+}
+
+/* 原型展示页面样式 */
+.prototype-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.prototype-item {
+  margin: 20px;
+}
+
+.prototype-label {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+} 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>播放 - 播客应用</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div id="status-bar"></div>
+    
+    <!-- 应用内容 -->
+    <div class="app-content">
+      <div class="player-page">
+        <!-- 播放器头部 -->
+        <div class="player-header">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        
+        <!-- 播放器封面 -->
+        <div style="width: 300px; height: 300px; background-color: #7c4dff; border-radius: 12px; margin: 0 auto 30px; display: flex; justify-content: center; align-items: center; color: white; font-size: 80px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+          <i class="fas fa-podcast"></i>
+        </div>
+        
+        <!-- 播放信息 -->
+        <div class="player-episode-title">Vol.278 如何培养高效学习的能力</div>
+        <div class="player-podcast-title">得到精品课</div>
+        
+        <!-- 进度条 -->
+        <div class="progress-bar">
+          <div class="progress-current"></div>
+          <div class="progress-handle"></div>
+        </div>
+        <div class="progress-time">
+          <span>12:34</span>
+          <span>25:00</span>
+        </div>
+        
+        <!-- 主要控制按钮 -->
+        <div class="player-main-controls">
+          <div class="control-button">
+            <i class="fas fa-step-backward"></i>
+          </div>
+          <div class="control-button">
+            <i class="fas fa-backward"></i>
+          </div>
+          <div class="control-button play-button">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="control-button">
+            <i class="fas fa-forward"></i>
+          </div>
+          <div class="control-button">
+            <i class="fas fa-step-forward"></i>
+          </div>
+        </div>
+        
+        <!-- 次要控制按钮 -->
+        <div class="player-secondary-controls">
+          <div class="secondary-button">
+            <i class="secondary-icon fas fa-heart"></i>
+            <span>收藏</span>
+          </div>
+          <div class="secondary-button">
+            <i class="secondary-icon fas fa-comment"></i>
+            <span>评论</span>
+          </div>
+          <div class="secondary-button">
+            <i class="secondary-icon fas fa-share-alt"></i>
+            <span>分享</span>
+          </div>
+          <div class="secondary-button">
+            <i class="secondary-icon fas fa-download"></i>
+            <span>下载</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 添加状态栏
+      const statusBarContainer = document.getElementById('status-bar');
+      if (statusBarContainer) {
+        statusBarContainer.innerHTML = createStatusBar();
+      }
+    });
+  </script>
+</body>
+</html> 

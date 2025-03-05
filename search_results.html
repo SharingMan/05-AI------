@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索结果 - 播客应用</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div id="status-bar"></div>
+    
+    <!-- 应用内容 -->
+    <div class="app-content">
+      <div class="container">
+        <!-- 搜索栏 -->
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" class="search-input" value="得到精品课" placeholder="搜索播客、节目或主播">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        
+        <!-- 搜索结果分类 -->
+        <div style="display: flex; margin: 16px 0; border-bottom: 1px solid var(--border-color);">
+          <div style="flex: 1; text-align: center; padding-bottom: 12px; color: var(--primary-color); border-bottom: 2px solid var(--primary-color);">
+            <span>播客</span>
+          </div>
+          <div style="flex: 1; text-align: center; padding-bottom: 12px; color: var(--light-text-color);">
+            <span>剧集</span>
+          </div>
+          <div style="flex: 1; text-align: center; padding-bottom: 12px; color: var(--light-text-color);">
+            <span>主播</span>
+          </div>
+        </div>
+        
+        <!-- 搜索结果 -->
+        <div class="podcast-card">
+          <div style="background-color: #7c4dff; height: 120px; display: flex; justify-content: center; align-items: center; color: white; font-size: 36px;">
+            <i class="fas fa-podcast"></i>
+          </div>
+          <div class="podcast-info">
+            <div class="podcast-title">得到精品课</div>
+            <div class="podcast-author">罗振宇 · 每天听本书</div>
+          </div>
+        </div>
+        
+        <div class="podcast-card">
+          <div style="background-color: #9c27b0; height: 120px; display: flex; justify-content: center; align-items: center; color: white; font-size: 36px;">
+            <i class="fas fa-podcast"></i>
+          </div>
+          <div class="podcast-info">
+            <div class="podcast-title">得到例会</div>
+            <div class="podcast-author">罗振宇 · 商业</div>
+          </div>
+        </div>
+        
+        <div class="podcast-card">
+          <div style="background-color: #673ab7; height: 120px; display: flex; justify-content: center; align-items: center; color: white; font-size: 36px;">
+            <i class="fas fa-podcast"></i>
+          </div>
+          <div class="podcast-info">
+            <div class="podcast-title">得到读书会</div>
+            <div class="podcast-author">脱不花 · 阅读</div>
+          </div>
+        </div>
+        
+        <!-- 没有更多结果提示 -->
+        <div style="text-align: center; color: var(--light-text-color); margin: 24px 0; font-size: 14px;">
+          没有更多结果了
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div id="mini-player"></div>
+    
+    <!-- 底部导航栏 -->
+    <div id="tab-bar"></div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script>
+    initPage('search');
+  </script>
+</body>
+</html> 

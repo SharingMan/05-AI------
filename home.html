@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>发现 - 播客应用</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div id="status-bar"></div>
+    
+    <!-- 应用内容 -->
+    <div class="app-content">
+      <div class="container">
+        <h1 class="section-title">发现播客</h1>
+        
+        <!-- 分类选择 -->
+        <div class="categories">
+          <span class="category-pill active">推荐</span>
+          <span class="category-pill">新品</span>
+          <span class="category-pill">科技</span>
+          <span class="category-pill">商业</span>
+          <span class="category-pill">文化</span>
+          <span class="category-pill">教育</span>
+        </div>
+        
+        <!-- 精选播客 -->
+        <h2 class="section-title">精选播客</h2>
+        <div class="podcast-card">
+          <div style="background-color: #7c4dff; height: 180px; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px;">
+            <i class="fas fa-podcast" style="margin-right: 10px;"></i> 得到精品课
+          </div>
+          <div class="podcast-info">
+            <div class="podcast-title">得到精品课</div>
+            <div class="podcast-author">罗振宇 · 每天听本书</div>
+          </div>
+        </div>
+        
+        <!-- 热门播客 -->
+        <h2 class="section-title">热门播客</h2>
+        <div class="grid-container">
+          <div class="podcast-card">
+            <div style="background-color: #ff5722; height: 120px; display: flex; justify-content: center; align-items: center; color: white;">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="podcast-info">
+              <div class="podcast-title">忽左忽右</div>
+              <div class="podcast-author">李丁 · 文化</div>
+            </div>
+          </div>
+          
+          <div class="podcast-card">
+            <div style="background-color: #2196f3; height: 120px; display: flex; justify-content: center; align-items: center; color: white;">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="podcast-info">
+              <div class="podcast-title">故事FM</div>
+              <div class="podcast-author">刘飞 · 故事</div>
+            </div>
+          </div>
+          
+          <div class="podcast-card">
+            <div style="background-color: #4caf50; height: 120px; display: flex; justify-content: center; align-items: center; color: white;">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="podcast-info">
+              <div class="podcast-title">声东击西</div>
+              <div class="podcast-author">张鹏 · 科技</div>
+            </div>
+          </div>
+          
+          <div class="podcast-card">
+            <div style="background-color: #ff9800; height: 120px; display: flex; justify-content: center; align-items: center; color: white;">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="podcast-info">
+              <div class="podcast-title">硅谷早知道</div>
+              <div class="podcast-author">王冠 · 科技</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div id="mini-player"></div>
+    
+    <!-- 底部导航栏 -->
+    <div id="tab-bar"></div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script>
+    initPage('home');
+  </script>
+</body>
+</html> 

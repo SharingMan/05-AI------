@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索 - 播客应用</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div id="status-bar"></div>
+    
+    <!-- 应用内容 -->
+    <div class="app-content">
+      <div class="container">
+        <!-- 搜索栏 -->
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" class="search-input" placeholder="搜索播客、节目或主播">
+        </div>
+        
+        <!-- 热门搜索 -->
+        <h2 class="section-title">热门搜索</h2>
+        <div class="categories">
+          <span class="category-pill">得到</span>
+          <span class="category-pill">罗振宇</span>
+          <span class="category-pill">故事FM</span>
+          <span class="category-pill">科技</span>
+          <span class="category-pill">历史</span>
+          <span class="category-pill">英语学习</span>
+          <span class="category-pill">投资理财</span>
+          <span class="category-pill">冥想</span>
+        </div>
+        
+        <!-- 搜索历史 -->
+        <h2 class="section-title">搜索历史</h2>
+        <div class="episode-item">
+          <div style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; color: var(--light-text-color);">
+            <i class="fas fa-history"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">得到精品课</div>
+          </div>
+          <div style="color: var(--light-text-color);">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; color: var(--light-text-color);">
+            <i class="fas fa-history"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">如何提高工作效率</div>
+          </div>
+          <div style="color: var(--light-text-color);">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; color: var(--light-text-color);">
+            <i class="fas fa-history"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">故事FM</div>
+          </div>
+          <div style="color: var(--light-text-color);">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        
+        <!-- 清除历史按钮 -->
+        <div style="text-align: center; margin-top: 16px;">
+          <button class="btn-outline" style="width: auto; padding: 8px 16px;">
+            <i class="fas fa-trash-alt"></i> 清除搜索历史
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div id="mini-player"></div>
+    
+    <!-- 底部导航栏 -->
+    <div id="tab-bar"></div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script>
+    initPage('search');
+  </script>
+</body>
+</html> 

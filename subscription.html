@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>订阅 - 播客应用</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div id="status-bar"></div>
+    
+    <!-- 应用内容 -->
+    <div class="app-content">
+      <div class="container">
+        <h1 class="section-title">我的订阅</h1>
+        
+        <!-- 订阅列表 -->
+        <div class="grid-container">
+          <div class="podcast-card">
+            <div style="background-color: #7c4dff; height: 120px; display: flex; justify-content: center; align-items: center; color: white; font-size: 36px;">
+              <i class="fas fa-podcast"></i>
+            </div>
+            <div class="podcast-info">
+              <div class="podcast-title">得到精品课</div>
+              <div class="podcast-author">罗振宇 · 每天听本书</div>
+            </div>
+          </div>
+          
+          <div class="podcast-card">
+            <div style="background-color: #ff5722; height: 120px; display: flex; justify-content: center; align-items: center; color: white; font-size: 36px;">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="podcast-info">
+              <div class="podcast-title">忽左忽右</div>
+              <div class="podcast-author">李丁 · 文化</div>
+            </div>
+          </div>
+          
+          <div class="podcast-card">
+            <div style="background-color: #2196f3; height: 120px; display: flex; justify-content: center; align-items: center; color: white; font-size: 36px;">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="podcast-info">
+              <div class="podcast-title">故事FM</div>
+              <div class="podcast-author">刘飞 · 故事</div>
+            </div>
+          </div>
+        </div>
+        
+        <h2 class="section-title">最近更新</h2>
+        
+        <!-- 最近更新的剧集 -->
+        <div class="episode-item">
+          <div style="width: 60px; height: 60px; background-color: #7c4dff; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">Vol.278 如何培养高效学习的能力</div>
+            <div class="episode-meta">
+              <span>得到精品课</span>
+              <span class="episode-duration">25分钟</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 60px; height: 60px; background-color: #ff5722; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">EP.156 中国传统文化的现代价值</div>
+            <div class="episode-meta">
+              <span>忽左忽右</span>
+              <span class="episode-duration">45分钟</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 60px; height: 60px; background-color: #2196f3; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">EP.203 我在北京送外卖的日子</div>
+            <div class="episode-meta">
+              <span>故事FM</span>
+              <span class="episode-duration">35分钟</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="episode-item">
+          <div style="width: 60px; height: 60px; background-color: #7c4dff; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white;">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div class="episode-info">
+            <div class="episode-title">Vol.277 如何提高工作效率</div>
+            <div class="episode-meta">
+              <span>得到精品课</span>
+              <span class="episode-duration">28分钟</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div id="mini-player"></div>
+    
+    <!-- 底部导航栏 -->
+    <div id="tab-bar"></div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script>
+    initPage('subscription');
+  </script>
+</body>
+</html> 
